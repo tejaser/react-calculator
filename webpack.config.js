@@ -11,6 +11,10 @@ const config = {
       {
         test: /\.(js|jsx)$/, // check for .js or .jsx files using regex
         loader: 'babel-loader'
+      },
+      {
+        test:/\.css$/,
+        loaders: ['style-loader', 'css-loader']
       }
     ]
   }
